@@ -27,12 +27,12 @@ namespace Projeto.Escola.Repository
             using(SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
-                SqlCommand command = new SqlCommand(query, con);
-                command.Parameters.AddWithValue("@Rua", endereco.Rua);
-                command.Parameters.AddWithValue("@Numero", endereco.Numero);
-                command.Parameters.AddWithValue("@Cep", endereco.Cep);
-                command.Parameters.AddWithValue("@Complemento", endereco.Complemento);
-                command.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Rua", endereco.Rua);
+                cmd.Parameters.AddWithValue("@Numero", endereco.Numero);
+                cmd.Parameters.AddWithValue("@Cep", endereco.Cep);
+                cmd.Parameters.AddWithValue("@Complemento", endereco.Complemento);
+                cmd.ExecuteNonQuery();
             }
         }
 

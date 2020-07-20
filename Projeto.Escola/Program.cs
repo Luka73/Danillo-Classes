@@ -31,7 +31,7 @@ namespace Projeto.Escola
                 Console.WriteLine("Complemento: " + item.Complemento);
                 Console.WriteLine("*********************************");
             }
-     
+
             Console.ReadKey();
         }
     }
