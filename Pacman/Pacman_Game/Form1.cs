@@ -28,7 +28,8 @@ namespace Pacman_Game
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            foreach (Abstract_Entity obj in Map.entities)
+            //Chama o método das entidades que as desenha na tela
+            foreach (Abstract_Entity obj in Map.entities) //polimorfismo
             {
                 obj.Draw(e.Graphics);
             }

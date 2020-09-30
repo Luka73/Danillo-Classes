@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.Classes.Entities
 {
-    public class Ghost_Room: Abstract_Entity
+    public class Ghost_Room : Abstract_Entity
     {
-        public Ghost_Room(int row, int column) : base(0, row, column)
+        public Ghost_Room(int row, int column) 
+            : base(0, row, column) // o fantasma gera o score
         {
             base.EntityColor = Color.Black;
         }

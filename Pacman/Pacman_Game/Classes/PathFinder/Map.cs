@@ -59,7 +59,10 @@ namespace Pacman_Game.Classes.PathFinder
                         case 'T': //Create empty tile
                             obj = new Empty_Tile(row, column);
                             break;
-                        
+                        case 'P': //Create Pacman
+                            obj = new Pacman(row, column);
+                            break;
+
                     }
                     Map.entities.Add(obj);
                     column++;

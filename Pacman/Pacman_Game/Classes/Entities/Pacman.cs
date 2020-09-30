@@ -11,7 +11,9 @@ namespace Pacman_Game.Classes.Entities
     public class Pacman : Abstract_Entity
     {
 
-        private static string[] image_files = { "Pacman_None.png", "Pacman_Up.png", "Pacman_Down.png, Pacman_Left, Pacman_Right" };
+        //Faltando aspas no nome das imagens e faltando o .png no left e right!
+
+        private static string[] image_files = { "Pacman_None.png", "Pacman_Up.png", "Pacman_Down.png", "Pacman_Left.png", "Pacman_Right.png" };
 
         private int lives;
         private Direction currentDirection;

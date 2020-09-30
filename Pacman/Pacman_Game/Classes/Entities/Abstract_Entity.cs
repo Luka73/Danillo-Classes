@@ -20,7 +20,7 @@ namespace Pacman_Game.Classes.Entities
 
         protected Abstract_Entity(int score, int row, int column)
         {
-            this.score = score;
+            this.score = score; //quanto o jogador ganha ou perde por tocar aquele item
             this.row = row;
             this.column = column;
             this.entityColor = Color.White;
